@@ -1,0 +1,50 @@
+.main-nav {
+  margin-left: auto;
+
+  @media (max-width: $size-screen-tablet) {
+    margin-left: 0;
+  }
+}
+
+.main-nav__container {
+  display: flex;
+
+  @media (max-width: $size-screen-tablet) {
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    background-color: $color-background;
+    bottom: 0;
+    top: 70px;
+    padding-top: 15px;
+    transition: left 0.5s;
+
+    .main-nav--open & {
+      left: 0;
+    }
+  }
+}
+
+.main-nav__btn {
+  display: none;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 30px;
+
+  @media (max-width: $size-screen-tablet) {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+

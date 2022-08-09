@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $main-color-text;
+
+  padding: 337px 0;
+
+  @media (max-width: $size-screen-tablet) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $size-screen-mobile) {
+    padding: 50px 0;
+  }
+}
+
+
